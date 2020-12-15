@@ -1,0 +1,33 @@
+<div class="login-page">
+    <mat-card class="mat-elevation-z12">
+          <mat-card-title style="text-align:center;">Login</mat-card-title>
+          <mat-card-content>
+            <form action="">
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Usuário"
+                  required
+                  name="username"
+                  ngModel
+                  [(ngModel)]="login.username">
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Senha"
+                  type="password"
+                  required
+                  minlength="6"
+                  name="password"
+                  ngModel
+                  [(ngModel)]="login.password">
+              </mat-form-field>
+              <button mat-raised-button (click)="onSubmit()" color="ifood">
+                  Efetuar Login
+              </button>
+            </form>
+          </mat-card-content>
+      </mat-card>
+  </div>
+  
